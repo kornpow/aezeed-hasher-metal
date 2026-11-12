@@ -1,0 +1,80 @@
+{
+  "reference": "chantools version v0.14.3, commit",
+  "timestamp_utc": "2026-11-11T04:59:30.198095+00:00",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "rust_binary_sha256": "6f8b18ce57354a23a1b24d1a99c3491bede397d63d7665a21d0fb5abfb1f9e49",
+  "reference_binary_sha256": "4c4624527d80a130b1244e0c2b81c622e6435b980dd437f431eb049be169eea9",
+  "workload": "Random entropy generation, full BIP32 identity derivation, and public key prefix comparison",
+  "seconds_per_sample": 5,
+  "repeats": 3,
+  "restore_checks": [
+    {
+      "backend": "cpu",
+      "network": "mainnet",
+      "passed": true
+    },
+    {
+      "backend": "cpu",
+      "network": "testnet",
+      "passed": true
+    },
+    {
+      "backend": "metal",
+      "network": "mainnet",
+      "passed": true
+    },
+    {
+      "backend": "metal",
+      "network": "testnet",
+      "passed": true
+    }
+  ],
+  "benchmarks": [
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "cpu",
+        "--threads",
+        "4"
+      ],
+      "median_seeds_per_second": 126342,
+      "samples_seeds_per_second": [
+        126648,
+        126286,
+        126342
+      ],
+      "gpu_verified": false
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal"
+      ],
+      "median_seeds_per_second": 1227355,
+      "samples_seeds_per_second": [
+        1229767,
+        1227355,
+        1222739
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "chantools",
+      "threads": 4,
+      "median_seeds_per_second": 59600.0,
+      "samples_seeds_per_second": [
+        59800.0,
+        59600.0,
+        59600.0
+      ],
+      "note": "Reference reports tested count rounded down to thousands."
+    }
+  ],
+  "fixed_entropy_vectors_checked": 16,
+  "recommended_gpu_arguments": [
+    "--backend",
+    "metal"
+  ]
+}

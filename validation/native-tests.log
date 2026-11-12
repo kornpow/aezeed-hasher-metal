@@ -1,0 +1,99 @@
+   Compiling libc v0.2.191
+   Compiling version_check v0.9.5
+   Compiling typenum v1.20.1
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling cfg-if v1.0.5
+   Compiling bitcoin-io v0.1.4
+   Compiling subtle v2.6.1
+   Compiling arrayvec v0.7.8
+   Compiling cc v1.1.10
+   Compiling zerocopy v0.8.63
+   Compiling winapi-build v0.1.1
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-query v1.1.5
+   Compiling anstyle-parse v0.2.7
+   Compiling paste v1.0.15
+   Compiling hex_lit v0.1.1
+   Compiling colorchoice v1.0.5
+   Compiling hex-conservative v0.2.3
+   Compiling kernel32-sys v0.2.2
+   Compiling generic-array v0.14.7
+   Compiling anstyle v1.0.14
+   Compiling core-foundation-sys v0.8.7
+   Compiling anyhow v1.0.104
+   Compiling bitcoin v0.32.11
+   Compiling anstream v0.6.13
+   Compiling bitflags v2.13.2
+   Compiling strsim v0.11.1
+   Compiling clap_lex v0.7.7
+   Compiling foreign-types-shared v0.3.1
+   Compiling heck v0.5.0
+   Compiling winapi v0.2.8
+   Compiling clap_builder v4.5.32
+   Compiling log v0.4.35
+   Compiling secp256k1-sys v0.10.1
+   Compiling block v0.1.6
+   Compiling bitcoin-units v0.1.4
+   Compiling bech32 v0.11.1
+   Compiling hex v0.4.3
+   Compiling bitcoin_hashes v0.14.2
+   Compiling syn v3.0.10
+   Compiling syn v2.0.119
+   Compiling base58ck v0.1.1
+   Compiling cpufeatures v0.2.17
+   Compiling getrandom v0.2.17
+   Compiling malloc_buf v0.0.6
+   Compiling core-foundation v0.10.1
+   Compiling objc v0.2.7
+   Compiling rand_core v0.6.4
+   Compiling core-graphics-types v0.2.0
+   Compiling ctrlc v3.0.2
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling inout v0.1.4
+   Compiling digest v0.10.7
+   Compiling cipher v0.4.4
+   Compiling clap_derive v4.5.32
+   Compiling foreign-types-macros v0.2.4
+   Compiling hmac v0.12.1
+   Compiling sha2 v0.10.9
+   Compiling blake2 v0.10.6
+   Compiling salsa20 v0.10.2
+   Compiling aes v0.8.4
+   Compiling pbkdf2 v0.12.2
+   Compiling scrypt v0.11.0
+   Compiling foreign-types v0.5.0
+   Compiling metal v0.33.0
+   Compiling clap v4.5.32
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling secp256k1 v0.29.1
+   Compiling aezeed-hasher-metal v0.1.0 (.)
+    Finished `release` profile [optimized] target(s) in 10.05s
+     Running unittests src/lib.rs (target/release/deps/aezeed_hasher_metal-7891c0f802cc3f33)
+
+running 6 tests
+test derive::tests::prefix_and_probability ... ok
+test derive::tests::invalid_bip32_children_are_rejected ... ok
+test derive::tests::fixed_chantools_identity_vectors ... ok
+test aezeed::tests::lnd_official_vectors_and_restore ... ok
+test derive::tests::matches_bitcoin_bip32_all_stages_and_networks ... ok
+test gpu::tests::metal_matches_every_bip32_stage ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.46s
+
+     Running unittests src/main.rs (target/release/deps/aezeed_hasher_metal-6e3378fe72c8c257)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests aezeed_hasher_metal
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

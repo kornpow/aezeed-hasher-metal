@@ -1,0 +1,579 @@
+{
+  "reference": "chantools version v0.14.3, commit",
+  "timestamp_utc": "2026-11-11T04:50:43.122536+00:00",
+  "seconds_per_sample": 2,
+  "repeats": 2,
+  "restore_checks": [
+    {
+      "backend": "cpu",
+      "network": "mainnet",
+      "passed": true
+    },
+    {
+      "backend": "cpu",
+      "network": "testnet",
+      "passed": true
+    },
+    {
+      "backend": "metal",
+      "network": "mainnet",
+      "passed": true
+    },
+    {
+      "backend": "metal",
+      "network": "testnet",
+      "passed": true
+    }
+  ],
+  "benchmarks": [
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "cpu",
+        "--threads",
+        "4"
+      ],
+      "median_seeds_per_second": 126272.0,
+      "samples_seeds_per_second": [
+        126443,
+        126101
+      ],
+      "gpu_verified": false
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "1024",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 35918.5,
+      "samples_seeds_per_second": [
+        35913,
+        35924
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "1024",
+        "--threadgroup-size",
+        "64",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 36051.5,
+      "samples_seeds_per_second": [
+        36054,
+        36049
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "1024",
+        "--threadgroup-size",
+        "128",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 35741.0,
+      "samples_seeds_per_second": [
+        35738,
+        35744
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "4096",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 141995.0,
+      "samples_seeds_per_second": [
+        141952,
+        142038
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "4096",
+        "--threadgroup-size",
+        "64",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 141985.0,
+      "samples_seeds_per_second": [
+        142031,
+        141939
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "4096",
+        "--threadgroup-size",
+        "128",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 141936.5,
+      "samples_seeds_per_second": [
+        142002,
+        141871
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "8192",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 275309.0,
+      "samples_seeds_per_second": [
+        275155,
+        275463
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "8192",
+        "--threadgroup-size",
+        "64",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 275326.0,
+      "samples_seeds_per_second": [
+        275229,
+        275423
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "8192",
+        "--threadgroup-size",
+        "128",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 275326.5,
+      "samples_seeds_per_second": [
+        275419,
+        275234
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "1024",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 62378.0,
+      "samples_seeds_per_second": [
+        62374,
+        62382
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "1024",
+        "--threadgroup-size",
+        "64",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 62428.5,
+      "samples_seeds_per_second": [
+        62468,
+        62389
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "1024",
+        "--threadgroup-size",
+        "128",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 61982.5,
+      "samples_seeds_per_second": [
+        62000,
+        61965
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "4096",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 245321.0,
+      "samples_seeds_per_second": [
+        245203,
+        245439
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "4096",
+        "--threadgroup-size",
+        "64",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 245123.0,
+      "samples_seeds_per_second": [
+        245226,
+        245020
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "4096",
+        "--threadgroup-size",
+        "128",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 245080.5,
+      "samples_seeds_per_second": [
+        244986,
+        245175
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "8192",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 469395.0,
+      "samples_seeds_per_second": [
+        469530,
+        469260
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "8192",
+        "--threadgroup-size",
+        "64",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 469865.5,
+      "samples_seeds_per_second": [
+        470140,
+        469591
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "8192",
+        "--threadgroup-size",
+        "128",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 469736.5,
+      "samples_seeds_per_second": [
+        469698,
+        469775
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "1024",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 98471.5,
+      "samples_seeds_per_second": [
+        98519,
+        98424
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "1024",
+        "--threadgroup-size",
+        "64",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 98339.0,
+      "samples_seeds_per_second": [
+        98388,
+        98290
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "1024",
+        "--threadgroup-size",
+        "128",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 97572.0,
+      "samples_seeds_per_second": [
+        97600,
+        97544
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "4096",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 385271.0,
+      "samples_seeds_per_second": [
+        385315,
+        385227
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "4096",
+        "--threadgroup-size",
+        "64",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 385429.5,
+      "samples_seeds_per_second": [
+        385485,
+        385374
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "4096",
+        "--threadgroup-size",
+        "128",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 385425.5,
+      "samples_seeds_per_second": [
+        385281,
+        385570
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "8192",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 732039.5,
+      "samples_seeds_per_second": [
+        732384,
+        731695
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "8192",
+        "--threadgroup-size",
+        "64",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 732048.5,
+      "samples_seeds_per_second": [
+        732040,
+        732057
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "8192",
+        "--threadgroup-size",
+        "128",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 732069.5,
+      "samples_seeds_per_second": [
+        731932,
+        732207
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "chantools",
+      "threads": 4,
+      "median_seeds_per_second": 59500.0,
+      "samples_seeds_per_second": [
+        59500.0,
+        59500.0
+      ],
+      "note": "Reference reports tested count rounded down to thousands."
+    }
+  ],
+  "fixed_entropy_vectors_checked": 16,
+  "recommended_gpu_arguments": [
+    "--backend",
+    "metal",
+    "--batch-size",
+    "8192",
+    "--threadgroup-size",
+    "128",
+    "--window-bits",
+    "8"
+  ]
+}

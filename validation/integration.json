@@ -1,0 +1,50 @@
+{
+  "intended_cli": [
+    "cargo",
+    "run",
+    "--release",
+    "--locked",
+    "--",
+    "vanitygen",
+    "--prefix",
+    "022222",
+    "--backend",
+    "metal"
+  ],
+  "gpu": "GPU: Apple M4 Max, batch size 16384, threadgroup size 32, curve window 8 bits",
+  "intended_cli_24_word_aezeed_restored_by_chantools": true,
+  "network_flags": {
+    "mainnet": "passed",
+    "testnet": "passed",
+    "testnet4": "passed",
+    "signet": "passed",
+    "regtest": "passed"
+  },
+  "cancellation": {
+    "cpu": {
+      "passed": true,
+      "seconds_after_sigint": 0.01937366696074605
+    },
+    "metal": {
+      "passed": true,
+      "seconds_after_sigint": 0.01454329106491059
+    }
+  },
+  "binary_sha256": "6f8b18ce57354a23a1b24d1a99c3491bede397d63d7665a21d0fb5abfb1f9e49",
+  "source_sha256": {
+    "Cargo.toml": "f74753c1ba811775c8471078271097b130b5edd2009c39d0a16eebf0f2498bfc",
+    "Cargo.lock": "efd2e95fb98c693c7ae7381a14cb82402b197509166c9f4e160162a034d9b17b",
+    "src/aezeed.rs": "ac38a16f64bbee7aa9d4f1e4cc0b9ac0f9ef73924cc49bef6924e76ca31e8cd8",
+    "src/derive.rs": "be18d9b78d6defcc635a9ec8727a24b9680ac0fbecb2979af76cbc51cd3dcae0",
+    "src/gpu.rs": "2323c792fe9468d5e39ba35882ad0ad753aa139571e6df0af59515e8586d1261",
+    "src/lib.rs": "0a0461b3aac2b7bd59cbfdb62b8851b595b4a352bd2c45b0129c697f108f7201",
+    "src/main.rs": "f212ce82edf5d503476f65a5a1f2d6c7e37e86ce3b666e118afa2a5834e85be9",
+    "shaders/search.metal": "d951dff9d31a15a0a407663960c3bbe429d15970dc8725d41ab4079b44b221c4",
+    "shaders/sha512-constants.metal": "feeffd723171c58d33a5a1bab58f7e55f4ee1886daf8006cfaea943ed37ada19"
+  },
+  "hardware": {
+    "cpu": "Apple M4 Max",
+    "cpu_cores": 14,
+    "memory_bytes": 38654705664
+  }
+}

@@ -1,0 +1,29 @@
+[package]
+name = "aezeed-hasher-metal"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+license = "MIT"
+description = "LND vanity node identity generation on Apple GPUs"
+
+[dependencies]
+anyhow = "1"
+bitcoin = "0.32"
+clap = { version = "=4.5.32", features = ["derive"] }
+ctrlc = "3"
+hex = "0.4"
+rand = "0.8"
+sha2 = "0.10"
+hmac = "0.12"
+scrypt = { version = "0.11", default-features = false }
+aes = { version = "0.8", features = ["hazmat"] }
+blake2 = "0.10"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+metal = "0.33"
+objc = "0.2"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+

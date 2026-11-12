@@ -1,0 +1,8 @@
+/target/
+/.cargo-home/
+*.metallib
+*.air
+.DS_Store
+/chantools/
+/cryptography-toolkit/
+__pycache__/

@@ -1,0 +1,44 @@
+{
+  "timestamp_utc": "2026-11-11T15:22:20.771199+00:00",
+  "seconds_per_sample": 3,
+  "repeats": 3,
+  "program": "chantools v0.14.3",
+  "cpu": "Apple M4 Max (14 cores)",
+  "thread_counts": [
+    {
+      "threads": 4,
+      "samples_seeds_per_second": [
+        60000.0,
+        60333.333333333336,
+        60000.0
+      ],
+      "median_seeds_per_second": 60000.0
+    },
+    {
+      "threads": 10,
+      "samples_seeds_per_second": [
+        135000.0,
+        135000.0,
+        135000.0
+      ],
+      "median_seeds_per_second": 135000.0
+    },
+    {
+      "threads": 14,
+      "samples_seeds_per_second": [
+        147333.33333333334,
+        148000.0,
+        147333.33333333334
+      ],
+      "median_seeds_per_second": 147333.33333333334
+    }
+  ],
+  "gpu_samples_seeds_per_second": [
+    1189004,
+    1226317,
+    1226091
+  ],
+  "gpu_median_seeds_per_second": 1226091,
+  "gpu_binary_sha256": "6f8b18ce57354a23a1b24d1a99c3491bede397d63d7665a21d0fb5abfb1f9e49",
+  "gpu_speedup_vs_fastest_tested_cpu": 8.321884615384615
+}

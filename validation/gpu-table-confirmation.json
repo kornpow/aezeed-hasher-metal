@@ -1,0 +1,123 @@
+{
+  "reference": "chantools version v0.14.3, commit",
+  "timestamp_utc": "2026-11-11T04:56:13.908609+00:00",
+  "seconds_per_sample": 3,
+  "repeats": 2,
+  "restore_checks": [
+    {
+      "backend": "cpu",
+      "network": "mainnet",
+      "passed": true
+    },
+    {
+      "backend": "cpu",
+      "network": "testnet",
+      "passed": true
+    },
+    {
+      "backend": "metal",
+      "network": "mainnet",
+      "passed": true
+    },
+    {
+      "backend": "metal",
+      "network": "testnet",
+      "passed": true
+    }
+  ],
+  "benchmarks": [
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "cpu",
+        "--threads",
+        "4"
+      ],
+      "median_seeds_per_second": 126198.5,
+      "samples_seeds_per_second": [
+        126151,
+        126246
+      ],
+      "gpu_verified": false
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "16384",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "2"
+      ],
+      "median_seeds_per_second": 507661.5,
+      "samples_seeds_per_second": [
+        507768,
+        507555
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "16384",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "4"
+      ],
+      "median_seeds_per_second": 829262.5,
+      "samples_seeds_per_second": [
+        829957,
+        828568
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "metal",
+        "--batch-size",
+        "16384",
+        "--threadgroup-size",
+        "32",
+        "--window-bits",
+        "8"
+      ],
+      "median_seeds_per_second": 1227668.5,
+      "samples_seeds_per_second": [
+        1227967,
+        1227370
+      ],
+      "gpu_verified": true
+    },
+    {
+      "program": "chantools",
+      "threads": 4,
+      "median_seeds_per_second": 59500.0,
+      "samples_seeds_per_second": [
+        59666.666666666664,
+        59333.333333333336
+      ],
+      "note": "Reference reports tested count rounded down to thousands."
+    }
+  ],
+  "fixed_entropy_vectors_checked": 16,
+  "recommended_gpu_arguments": [
+    "--backend",
+    "metal",
+    "--batch-size",
+    "16384",
+    "--threadgroup-size",
+    "32",
+    "--window-bits",
+    "8"
+  ]
+}

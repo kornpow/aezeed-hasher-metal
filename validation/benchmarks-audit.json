@@ -1,0 +1,46 @@
+{
+  "reference": "chantools version v0.14.3, commit",
+  "timestamp_utc": "2026-11-11T04:19:12.208163+00:00",
+  "seconds_per_sample": 2,
+  "repeats": 2,
+  "restore_checks": [
+    {
+      "backend": "cpu",
+      "network": "mainnet",
+      "passed": true
+    },
+    {
+      "backend": "cpu",
+      "network": "testnet",
+      "passed": true
+    }
+  ],
+  "benchmarks": [
+    {
+      "program": "rust",
+      "arguments": [
+        "--backend",
+        "cpu",
+        "--threads",
+        "4"
+      ],
+      "median_seeds_per_second": 127426.5,
+      "samples_seeds_per_second": [
+        127582,
+        127271
+      ],
+      "gpu_verified": false
+    },
+    {
+      "program": "chantools",
+      "threads": 4,
+      "median_seeds_per_second": 60250.0,
+      "samples_seeds_per_second": [
+        60500.0,
+        60000.0
+      ],
+      "note": "Reference reports tested count rounded down to thousands."
+    }
+  ],
+  "fixed_entropy_vectors_checked": 16
+}
